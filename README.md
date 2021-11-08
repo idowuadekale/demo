@@ -4,8 +4,6 @@ Some description!
 
 ## Subheader
 
-Watch Tutorials on YouTube. 
-
 Watch Tutorials on YouTube.
 
 ## Local Development
