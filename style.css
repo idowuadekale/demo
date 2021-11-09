@@ -6,7 +6,7 @@ body {
 
 .sidebar {
     height: 100%;
-    width: 180px;
+    width: 190px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -17,15 +17,16 @@ body {
 }
 
 .sidebar a {
-    padding: 40px 50px 80px 90px;
+    padding: 40px 50px 80px 60px;
     text-decoration: none;
     font-size: 25px;
     color: gray;
     display: block;
+    line-break: auto;
 }
 
-.sidebar a:hover {
-    color: seagreen;
+.sidebar a:hover .icon {
+    color: rgb(19, 105, 185);
 }
 
 .kickstart {
@@ -39,4 +40,16 @@ body {
     text-align: center;
     float: center;
     position: fixed;
+}
+
+.icon {
+    color: #dee4ec;
+    width: 10px;
+    display: inline-block;
+}
+
+a.active:before {
+    display: block;
+    color: snow;
+    background-color: aqua;
 }
