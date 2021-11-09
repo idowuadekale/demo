@@ -27,3 +27,16 @@ body {
 .sidebar a:hover {
     color: seagreen;
 }
+
+.kickstart {
+    height: fit-content;
+    width: 190px;
+    display: block;
+}
+
+#kickstart {
+    top: 0;
+    text-align: center;
+    float: center;
+    position: fixed;
+}
