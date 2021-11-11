@@ -6,30 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kickstart | Project</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="icon" href="kickstart.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="icon" href="icon.png">
 </head>
 
 <body>
-    <div class="sidebar">
-        <img class="kickstart" src="kickstart.png" alt="kickstart">
-        <h3 id="kickstart">Kickstart | Project</h3>
-        <a href="#home"><span class="icon"><i class="fas fa-home"></i></span> Home </a>
-        <a href="#Account"><span class="icon"><i class="fas fa-user-shield"></i></span> Account</a>
-        <a href="#logout"><span class="icon"><i class="fas fa-system"></i></span> Logout</a>
-        <a href="#settings"><span class="icon"><i class="fas fa-cog"></i></span> Settings.</a>
-    </div>
-
     <div class="section">
         <div class="top_navbar">
-            <div class="Account">
+            <div class="hamburger">
                 <a href="#">
                     <i class="fas fa-bars"></i>
                 </a>
             </div>
         </div>
-
     </div>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="kickstart.png" alt="kickstart">
+                <h3>Kickstart Project</h3>
+                <p>My First Kickstart Project</p>
+
+                <ul>
+                    <li>
+                        <a href="#" class="active">
+                            <span class="icon"> <i class="fas fa-home"></i></span>
+                            <span class="item">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"> <i class="fas fa-user-shield"></i></span>
+                            <span class="item">Account.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"> <i class="fas fa-tachometer"></i></span>
+                            <span class="item"> Option</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"> <i class="fas fa-cog"></i></span>
+                            <span class="item">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function() {
+            document.querySelector("body").classList.toggle("active");
+        })
+    </script>
 </body>
 
 </html>
