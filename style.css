@@ -1,55 +1,113 @@
-html,
-body {
-    background-color: navy;
-    color: #fff;
+@import url('https://fonts.googleapis.com/css2?family=open+San&display+swap');
+html {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: initial;
 }
 
-.sidebar {
-    height: 100%;
-    width: 190px;
+body {
+    background-color: blue;
+}
+
+.wrapper .sidebar {
+    background: rgb(1, 15, 24);
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
-    background-color: black;
-    overflow-x: hidden;
-    padding-top: 40px;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
 }
 
-.sidebar a {
-    padding: 40px 50px 80px 60px;
-    text-decoration: none;
-    font-size: 25px;
-    color: gray;
-    display: block;
-    line-break: auto;
-}
-
-.sidebar a:hover .icon {
-    color: rgb(19, 105, 185);
-}
-
-.kickstart {
-    height: fit-content;
-    width: 190px;
-    display: block;
-}
-
-#kickstart {
-    top: 0;
+.wrapper .sidebar .profile {
+    margin-bottom: 30px;
     text-align: center;
-    float: center;
-    position: fixed;
 }
 
-.icon {
-    color: #dee4ec;
-    width: 10px;
+.wrapper .sidebar .profile img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 70%;
+    margin: 0 auto;
+}
+
+.sidebar .profile h3 {
+    color: white;
+    margin: 10px 0 5px;
+}
+
+.sidebar .profile p {
+    color: thistle;
+    font-size: 14px;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid steelblue;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.sidebar ul li a .icon {
+    color: lightslategrey;
+    line-height: 0%;
+    width: 30px;
     display: inline-block;
 }
 
-a.active:before {
+ul li a:hover,
+ul li a:active {
+    color: red;
+    background: wheat;
+    border-right: 2px solid rgb(1, 68, 104);
+}
+
+.wrapper .sidebar ul li a:active .icon,
+ul li a:hover .icon {
+    color: midnightblue;
+}
+
+ul li a:hover,
+ul li a:active {
     display: block;
-    color: snow;
-    background-color: aqua;
+}
+
+.section {
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.section .top_navbar {
+    background: rgb(1, 68, 104);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.section .top_navbar .hamburger a {
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+.section .top_navbar .hamburger a:hover {
+    color: #a2ecff;
+}
+
+body .active .wrapper .sidebar {
+    left: -225px;
+}
+
+body.active .wrapper .section {
+    margin-left: 0;
+    width: 100%;
 }
