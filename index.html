@@ -5,64 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kickstart | Project</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <link rel="icon" href="icon.png">
+    <title>Form</title>
+    <link rel="icon" href="../Fire and Water.jpg">
+    <link rel="stylesheet" href="site.css" type="text/css">
 </head>
 
 <body>
-    <div class="section">
-        <div class="top_navbar">
-            <div class="hamburger">
-                <a href="#">
-                    <i class="fas fa-bars"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="sidebar">
-            <div class="profile">
-                <img src="kickstart.png" alt="kickstart">
-                <h3>Kickstart Project</h3>
-                <p>My First Kickstart Project</p>
+    <section id="section">
+        <h1 class="form"><pre>Create A Form</pre> </h1>
 
-                <ul>
-                    <li>
-                        <a href="#" class="active">
-                            <span class="icon"> <i class="fas fa-home"></i></span>
-                            <span class="item">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon"> <i class="fas fa-user-shield"></i></span>
-                            <span class="item">Account.</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon"> <i class="fas fa-tachometer"></i></span>
-                            <span class="item"> Option</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon"> <i class="fas fa-cog"></i></span>
-                            <span class="item">Settings</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <script>
-        var hamburger = document.querySelector(".hamburger");
-        hamburger.addEventListener("click", function() {
-            document.querySelector("body").classList.toggle("active");
-        })
-    </script>
+        <form action="http://localhost:5500/api/post" method="post">
+            <section>
+                <label for="firstname">Firstname:</label>
+                <input type="text" id="firstname" name="Firstname">
+                <label for="lastname" id="lastname">Lastname:</label>
+                <input type="text" id="lastname" name="Lastname">
+                <br>
+                <label for="phone-number" id="phone-number">Phone Number:</label>
+                <input type="number" id="phone-number" name="Phone number">
+                <br>
+
+                <label for="age">How old are you?</label>
+                <input type="number" name="age" id="age">
+                <br>
+                <input type="radio" name="gender" id="male" value="Sex">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="Sex">
+                <label for="female">Female</label>
+                <div></div>
+                <section class="country-selection">
+                    <label for="country">Where are you from?</label>
+                    <input type="text" list="countries" id="country" name="country">
+                    <datalist id="countries">
+                        <option value="Nigeria"></option>
+                        <option value="South Africa"></option>
+                        <option value="United State"></option>
+                        <option value="United Kingdom"></option>
+                        <option value="Burkina Faso"></option>
+                        <option value="Ghana"></option>
+                        </datalist>
+                </section>
+                <br>
+                <label for="username">Username:</label>
+                <input type="name" id="username" name="username">
+                <br>
+                <label for="user-password">Password: </label>
+                <input type="password" id="user-password" name="user-password">
+                <br>
+
+                <div>
+                    <button id="form"> <a href="complete.html">Form</a> </button>
+                </div>
+
+            </section>
+        </form>
+    </section>
 </body>
 
 </html>

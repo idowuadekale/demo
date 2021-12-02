@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Noto+Serif&display=swap');
+html,
+body {
+    background-color: rgb(44, 111, 179);
+    min-height: 100%;
+    word-spacing: normal;
+    margin: 0;
+    padding: 0;
+}
+
+#section {
+    background-color: grey;
+    color: black;
+    min-height: 80%;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.form,
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-style: arial, serif;
+    font-weight: bolder;
+    line-height: 30px;
+    text-decoration: underline black;
+}
+
+#lastname {
+    text-align: center;
+    line-break: pre;
+}
+
+#form {
+    background-color: black;
+    color: #fff;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    float: center;
+}

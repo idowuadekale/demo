@@ -1,113 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=open+San&display+swap');
-html {
-    list-style: none;
-    text-decoration: none;
+html,
+body {
+    background-image: url(./images/caves.jpg);
+    color: #fff;
+    line-height: 40px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    font-size: initial;
 }
 
-body {
-    background-color: blue;
+.world {
+    text-align: center;
+    text-decoration: underline #fff;
 }
 
-.wrapper .sidebar {
-    background: rgb(1, 15, 24);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 225px;
-    height: 100%;
-    padding: 20px 0;
-    transition: all 0.5s ease;
-}
-
-.wrapper .sidebar .profile {
-    margin-bottom: 30px;
+p {
+    background-origin: padding-box;
+    text-emphasis: initial;
+    padding: 0em;
+    margin: 2rem;
     text-align: center;
 }
 
-.wrapper .sidebar .profile img {
-    display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 70%;
-    margin: 0 auto;
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+    border-color: lightblue;
 }
 
-.sidebar .profile h3 {
-    color: white;
-    margin: 10px 0 5px;
+table {
+    border-spacing: 15px;
+    border-color: lightblue;
 }
 
-.sidebar .profile p {
-    color: thistle;
-    font-size: 14px;
+#great {
+    color: lightseagreen;
+    text-emphasis: inherit;
+    padding: 4px;
+    font: bolder;
 }
 
-.sidebar ul li a {
-    display: block;
-    padding: 13px 30px;
-    border-bottom: 1px solid steelblue;
-    color: rgb(241, 237, 237);
-    font-size: 16px;
-    position: relative;
+div,
+li,
+a {
+    text-decoration: lightgreen;
 }
 
-.sidebar ul li a .icon {
-    color: lightslategrey;
-    line-height: 0%;
-    width: 30px;
-    display: inline-block;
+#form {
+    background-color: grey;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-ul li a:hover,
-ul li a:active {
-    color: red;
-    background: wheat;
-    border-right: 2px solid rgb(1, 68, 104);
+a:link {
+    color: rgb(243, 10, 10);
+    background-color: black;
+    text-decoration: none;
 }
 
-.wrapper .sidebar ul li a:active .icon,
-ul li a:hover .icon {
-    color: midnightblue;
+a:visited {
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
 }
 
-ul li a:hover,
-ul li a:active {
-    display: block;
+a:hover {
+    color: skyblue;
+    background-color: darkblue;
+    text-decoration: underline;
 }
 
-.section {
-    width: calc(100% - 225px);
-    margin-left: 225px;
-    transition: all 0.5s ease;
-}
-
-.section .top_navbar {
-    background: rgb(1, 68, 104);
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-}
-
-.section .top_navbar .hamburger a {
-    font-size: 28px;
-    color: #f4fbff;
-}
-
-.section .top_navbar .hamburger a:hover {
-    color: #a2ecff;
-}
-
-body .active .wrapper .sidebar {
-    left: -225px;
-}
-
-body.active .wrapper .section {
-    margin-left: 0;
-    width: 100%;
+a:active {
+    color: tomato;
+    background-color: teal;
+    text-decoration: underline;
 }
