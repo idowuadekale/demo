@@ -1,10 +1,12 @@
-html,
 body {
     background-image: url(./images/caves.jpg);
     color: #fff;
-    line-height: 40px;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: cover;
 }
 
 
@@ -46,37 +48,39 @@ p {
 
 /* End of code For cursor inside a circle */
 
-.world {
+.intro {
     text-align: center;
-    text-decoration: underline #fff;
+    margin-top: 50px;
 }
 
-p {
-    background-origin: padding-box;
-    text-emphasis: initial;
-    padding: 0em;
+.intro p {
     margin: 2rem;
-    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+table {
+    width: 100%;
 }
 
 table,
 th,
 td {
-    border: 1px solid black;
+    border: 1px solid lightblue;
     padding: 5px;
-    border-color: lightblue;
 }
 
 table {
     border-spacing: 15px;
-    border-color: lightblue;
 }
 
 #great {
-    color: lightseagreen;
-    text-emphasis: inherit;
+    color: rgb(255, 255, 255);
     padding: 4px;
-    font: bolder;
+    text-align: center;
+    font-size: 20px;
+    border: hidden;
+    border-radius: 200%;
+    background-color: rgba(221, 221, 221, 0.438);
 }
 
 div,
