@@ -48,6 +48,10 @@ p {
 
 /* End of code For cursor inside a circle */
 
+a {
+    text-decoration: none;
+}
+
 .intro {
     text-align: center;
     margin-top: 50px;
@@ -83,40 +87,75 @@ table {
     background-color: rgba(221, 221, 221, 0.438);
 }
 
-div,
-li,
-a {
-    text-decoration: lightgreen;
-}
 
-#form {
-    background-color: grey;
-    color: black;
-    cursor: pointer;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a:link {
+/* a:link {
     color: rgb(243, 10, 10);
     background-color: black;
     text-decoration: none;
-}
+} */
 
-a:visited {
-    color: #fff;
-    background-color: black;
+.message-btn {
+    border-radius: 4px;
+    padding: 7px 25px 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    border: 2px solid darkblue;
     text-decoration: none;
 }
 
-a:hover {
-    color: skyblue;
+.message:hover {
     background-color: darkblue;
-    text-decoration: underline;
+    color: #fff;
 }
 
-a:active {
-    color: tomato;
-    background-color: teal;
-    text-decoration: underline;
+.message:active {
+    background-color: #333;
+    color: #ddd;
+    text-decoration: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.access li {
+    display: inline-block;
+}
+
+button {
+    border-radius: 4px;
+    padding: 7px 25px 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    border: 2px solid darkblue;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: darkblue;
+    color: #fff;
+}
+
+button:active {
+    background-color: #333;
+    color: #ddd;
+    text-decoration: none;
+}
+
+button a {
+    background-color: transparent;
+}
+
+table tr a {
+    text-align: center;
 }
